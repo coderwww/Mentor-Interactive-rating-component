@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/coderwww/Mentor-Interactive-rating-component/](https://github.com/coderwww/Mentor-Interactive-rating-component/)
+- Live Site URL: [https://coderwww.github.io/Mentor-Interactive-rating-component/](https://coderwww.github.io/Mentor-Interactive-rating-component/)
 
 ## My process
 
