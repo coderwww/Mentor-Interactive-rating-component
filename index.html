@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <div class="rating-component" id="rating-component" role="main">
+    <h1 class="rating-header">How did we do?</h1>
+    <div class="rating-text">Please let us know how we did with your support request. 
+      All feedback is appreciated to help us improve our offering!</div>
+    <form action=".">  
+      <fieldset>
+        <input type="radio" value="1" name="votes" id="vote1"><label for="vote1">1</label>
+        <input type="radio" value="2" name="votes" id="vote2"><label for="vote2">2</label>
+        <input type="radio" value="3" name="votes" id="vote3"><label for="vote3">3</label>
+        <input type="radio" value="4" name="votes" id="vote4"><label for="vote4">4</label>
+        <input type="radio" value="5" name="votes" id="vote5"><label for="vote5">5</label>
+      </fieldset>
+      <label class="submit"><input type="submit" value="Submit">Submit</label>
+    </form>
+  </div>
+
+  <script>
+    const rating = document.getElementById('rating-component');
+    const form = document.querySelector('form');
+
+    form.addEventListener('submit', event => {
+      event.preventDefault();
+      let vote = 0;
+      vote = form.querySelector('[name="votes"]:checked').value;
+      if (vote){
+        alert('submitting value '+ vote);
+        rating.innerHTML = `<div class="users-vote">You selected ${vote} out of 5</div>` +
+                          '<h1 class="rating-header">Thank you!</h1>' +
+                          '<div class="rating-text">We appreciate you taking the time to give a rating.' +
+                          ' If you ever need more support, don’t hesitate to get in touch!</div>';
+        rating.className += ' rating-thanks';
+      }
+    });
+  </script>
+
+</body>
+</html>
