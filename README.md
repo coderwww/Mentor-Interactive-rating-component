@@ -25,10 +25,10 @@ Users should be able to:
 
 ### Screenshot
 
-![](./design/Screenshot-Interactive-rating-component-mobile-1.png) 
-![](./design/Screenshot-Interactive-rating-component-mobile-2.png) 
-![](./design/Screenshot-Interactive-rating-component-desktop-1.png) 
-![](./design/Screenshot-Interactive-rating-component-desktop-2.png) 
+![](./screenshots/screenshot-mobile-1.png) 
+![](./screenshots/screenshot-mobile-2.png) 
+![](./screenshots/screenshot-desktop-1.png) 
+![](./screenshots/screenshot-desktop-2.png) 
 
 ### Links
 
